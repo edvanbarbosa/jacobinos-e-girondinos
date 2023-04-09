@@ -1,0 +1,217 @@
+@charset "UTF-08";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  background-color: #0e0d0d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+p{
+  font-family: 'Inter', sans-serif;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* header{
+  display: flex;
+  align-items: center;
+  width: 90%;
+  font-family: 'Ubuntu', sans-serif;
+  height: 15vh;
+  color: #F2F2F2;
+  font-weight: 700;
+  font-size: 1.3em;
+  
+} */
+/* header > p{
+  display: flex;
+  align-items: center;
+  text-indent: 3em;
+  width: 100%;
+  height: 80%;
+  background-color: #F26666 ;
+  border-radius: 6px;
+  box-shadow: 1px 1px 12px 6px #a9a7a73a;
+  text-decoration: underline;
+} */
+.intro{
+  font-family: 'Ubuntu', sans-serif;
+  color: #F2F2F2;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(src/5bdc1a87-2ca4-4349-ba4f-a3953e46fb3f.png);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  
+}
+.intro p {
+  color: #f2f2f27e;
+  font-size: 1.3em;
+}
+h1{
+  font-size: 4em;
+}
+.filtro{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height:100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.454);
+}
+.filtro .text-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0em;
+  border-radius: 10px;
+  height: 60%;
+  width: 80%;
+  background-color: rgb(13, 12, 12)
+}
+section{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.introduction{
+  
+  background-color: #667bf2c0;
+}
+.introduction  .img-container{
+  background: url('src/introducao.png');
+}
+.container{
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 80%;
+  background-color: rgb(13, 12, 12)
+}
+.text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5em;
+  height: 100%;
+  width: 50%;
+  padding: 3em;
+}
+.img-container{
+  border-top-right-radius:  10px;
+  border-bottom-right-radius: 10px;
+  height: 100%;
+  width: 50%;
+}
+.img-container > .filtro{
+  background-color: rgba(13, 12, 12, 0.203)
+}
+.text-container{
+  font-family: 'inter', sans-serif;
+  color: #F2F2F2;
+}
+h2{
+  font-family: 'Ubuntu',sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+.text-container p{
+  line-height: 2em;
+}
+
+.id-jac{
+  background: #f2f2f2cd;
+}
+.id-jac  .img-container{
+  background: url('src/id-jac.png');
+}
+.id-gir{
+  background: #f26666cb;
+}
+
+.id-gir .img-container{
+  background: url('src/id-gir.png');
+}
+.luta{
+  background-color: #223059;
+}
+.luta .img-container{
+  background: url('src/luta.png');
+}
+.fim-gir{
+  background: #2827273b;
+}
+.fim-gir .img-container{
+  background: url('src/fim.png');
+}
+.conclusao{
+  background: #7882f5bf;
+}
+.conclusao .img-container{
+  background: url('src/conclusao.png');
+}
+
+@media screen and (max-width:1100px) {
+    .text-container{
+      gap: 2em;
+    }
+    .text-container p {
+      line-height: 1.8em;
+    }
+}
+@media screen and (max-width:950px) {
+  .container{
+    flex-direction: column-reverse;
+    gap: 0em;
+    height: 90%;
+  }
+  .text-container{
+    background-color: #0e0d0d1d;
+    padding: 1em;
+    height: 100%;
+    width: 100%;
+  }
+  .img-container{
+    background-size: cover
+    ;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    border-radius: 0em;
+    
+  }
+  .img-container, .filtro{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .text-container p{
+    font-size: .9em;
+  }
+  h2{
+    font-size: 1.7em;
+  }
+  h1{
+    font-size: 2.8em;
+  }
+}
