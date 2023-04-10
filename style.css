@@ -70,6 +70,7 @@ button{
   color: rgb(13, 12, 12);
   transition: .3s ease-in-out;
   margin-top: 2em;
+  cursor: pointer;
 }
 button:hover{
   transform: scale(1.1);
