@@ -60,6 +60,20 @@ main{
   width: 100%;
   
 }
+button{
+  font-family: 'Ubuntu', sans-serif;
+  padding: 1.3em;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.01em;
+  font-weight: 700;
+  color: rgb(13, 12, 12);
+  transition: .3s ease-in-out;
+  margin-top: 2em;
+}
+button:hover{
+  transform: scale(1.1);
+}
 .intro p {
   color: #f2f2f27e;
   font-size: 1.3em;
