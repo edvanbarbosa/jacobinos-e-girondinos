@@ -23,28 +23,75 @@ main{
   align-items: center;
   flex-direction: column;
 }
-/* header{
+
+nav{
+  position: fixed;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  width: 90%;
-  font-family: 'Ubuntu', sans-serif;
-  height: 15vh;
-  color: #F2F2F2;
-  font-weight: 700;
-  font-size: 1.3em;
-  
-} */
-/* header > p{
-  display: flex;
-  align-items: center;
-  text-indent: 3em;
+  height: 14%;
   width: 100%;
-  height: 80%;
-  background-color: #F26666 ;
-  border-radius: 6px;
-  box-shadow: 1px 1px 12px 6px #a9a7a73a;
-  text-decoration: underline;
-} */
+  align-content: flex-start;
+  top: 0;
+  gap: 3em;
+  border-bottom-left-radius:40px ;
+  border-bottom-right-radius:40px ;
+}
+.barras{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+  margin-right: 2em;
+  height: 70%;
+  border-radius: 10px;
+  background-color: #F2F2F2;
+  transition: .6s ease-in-out;
+}
+
+g{
+  fill: #0e0d0d;
+}
+
+nav > ul{
+  
+  list-style-type: none;
+  display: none;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2em;
+  padding-left: 2em;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  height: 70%;
+  width: 80%;
+  animation: aparecer .6s ease-in-out;
+
+
+}
+nav button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  width: 5.2em;
+  height: 2em;
+  background-color: #0e0d0d;
+  color: #f2f2f2;
+  
+}
+nav a{
+
+  color: #000000;
+  text-decoration: none;
+  transition: .3s ease-in-out;
+}
+ nav>ul>li>a:hover{
+  font-size: 1.1em;
+  border-bottom: 2px solid #0e0d0d;
+}
+
+
 .intro{
   font-family: 'Ubuntu', sans-serif;
   color: #F2F2F2;
@@ -85,8 +132,8 @@ h1{
 .intro .filtro{
   text-align: center;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   height:100%;
   width: 100%;
@@ -298,5 +345,25 @@ footer > .container div:nth-child(2){
   }
   h1{
     font-size: 2.8em;
+  }
+}
+
+@keyframes aparecer {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes scalar {
+  0%{
+    transform: scale(1);
+  }
+  60%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
   }
 }

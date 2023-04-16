@@ -4,22 +4,73 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jacobinos e Girondinos</title>
   </head>
   <body>
     <main>
-      <section class="intro">
+      <section class="intro" id="home">
         <div class="filtro">
-          <div class="text-container">
+          <div class="text-container scrollI">
+            <nav>
+              <ul>
+                <li>
+                  <a href="#home">
+                    Inicio
+                  </a>
+                </li>
+                <li>
+                  <a href="#introducao">
+                    Introdução
+                  </a>
+                </li>
+                <li>
+                  <a href="#id-j">
+                    Ideologia Jacobinos
+                  </a>
+                </li>
+                <li>
+                  <a href="#id-g">
+                    Ideologia Girondinos
+                  </a>
+                </li>
+                <li>
+                  <a href="#fight">
+                    Luta
+                  </a>
+                </li>
+                <li>
+                  <a href="#fim-g">
+                    Fim dos Girondinos
+                  </a>
+                </li>
+                <li>
+                  <a href="#conclusion">
+                    Conclusão
+                  </a>
+                </li>
+                <li>
+                  <a href="#qs">Quem Somos?</a>
+                </li>
+                <a href="https://pt.quizur.com/trivia/jacobinos-e-girondinos-T7fC">
+                  <li>
+                      <button>Quiz</button>
+                  </li>
+                </a>
+              </ul>
+              <div class="barras">
+                <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z"/></g></svg>
+              </div>
+            </nav>
             <h1>Jacobinos e Girondinos</h1> <br>
             <p>Uma explicação breve sobre dois dos grupos históricos mais importantes</p><br>
             <a href="https://pt.quizur.com/trivia/jacobinos-e-girondinos-T7fC"><button> Responda Nosso Quiz</button></a>
           </div>
         </div>
       </section>
-      <section class="introduction">
-        <div class="container">
+      <section class="introduction" id="introducao">
+        <div class="container scrollI">
           <div class="text-container">
             <h2>Introdução</h2>
             <p>
@@ -27,11 +78,11 @@
               Os jacobinos eram um grupo político radical que defendia a igualdade e a liberdade, enquanto os girondinos eram mais moderados e preferiam uma abordagem gradual para a reforma política e social.
             </p>
           </div>
-          <div class="img-container"><div class="filtro"></div></div>
+          <div class="img-container"><div class="filtro"></div>
         </div>
       </section>
-      <section class="id-jac">
-        <div class="container">
+      <section class="id-jac" id="id-j">
+        <div class="container scrollI">
           <div class="text-container">
             <h2>As Ideologias dos Jacobinos</h2>
             <p>
@@ -42,8 +93,8 @@
           <div class="img-container"><div class="filtro"></div></div>
         </div>
       </section>
-      <section class="id-gir">
-        <div class="container">
+      <section class="id-gir"id="id-g">
+        <div class="container scrollI">
           <div class="text-container">
             <h2>As Ideologias dos Girondinos</h2>
             <p>
@@ -54,8 +105,8 @@
           <div class="img-container"><div class="filtro"></div></div>
         </div>
       </section>
-      <section class="luta">
-        <div class="container">
+      <section class="luta" id="fight" >
+        <div class="container scrollI">
           <div class="text-container">
             <h2>A Luta Política</h2>
             <p>
@@ -66,8 +117,8 @@
           <div class="img-container"><div class="filtro"></div></div>
         </div>
       </section>
-      <section class="fim-gir">
-        <div class="container">
+      <section class="fim-gir" id="fim-g">
+        <div class="container scrollI">
           <div class="text-container">
             <h2>O Fim dos Girondinos</h2>
             <p>
@@ -78,8 +129,8 @@
           <div class="img-container"><div class="filtro"></div></div>
         </div>
       </section>
-      <section class="conclusao">
-        <div class="container">
+      <section class="conclusao" id="conclusion">
+        <div class="container scrollI">
           <div class="text-container">
             <h2>Conclusão</h2>
             <p>
@@ -92,9 +143,9 @@
       </section>
       
     </main>
-    <footer>
+    <footer id="qs">
       <div class="container">
-        <div class="l1">
+        <div class="l1 scrollI">
           <h2>Realização 2° IRC </h2>
           <ul>
             <li>
@@ -114,7 +165,7 @@
             </li>
           </ul>
         </div>
-        <div class="l2">
+        <div class="l2 scrollI">
           <h2>Desenvolvedor </h2>
           <ul>
             <li>
@@ -127,5 +178,6 @@
       </div>
 
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
