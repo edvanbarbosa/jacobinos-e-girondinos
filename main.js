@@ -1,5 +1,5 @@
 const barra = document.querySelector("nav ul")
-const itens = document.querySelectorAll("nav a")
+const itens = document.querySelectorAll("nav > ul > a")
 const sandwich = document.querySelector(".barras")
 
 let click = -1
@@ -42,5 +42,5 @@ itens.forEach(e=>{
     })
 })
 
-ScrollReveal().reveal('.scrollI ',{delay: 300});
+
 
