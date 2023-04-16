@@ -1,5 +1,5 @@
 const barra = document.querySelector("nav ul")
-const itens = document.querySelectorAll("nav > ul > a")
+const itens = document.querySelectorAll(".link-local")
 const sandwich = document.querySelector(".barras")
 
 let click = -1
